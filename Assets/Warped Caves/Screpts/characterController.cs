@@ -14,6 +14,8 @@ public class characterController : MonoBehaviour {
 	public float move;
     private bool isFacingRight = true;
     private Animator anim;
+    private bool isGrounded = false;
+
 
 	private GameObject star;
     /// <summary>
@@ -36,11 +38,18 @@ public class characterController : MonoBehaviour {
 
         anim.SetFloat("Speed", Mathf.Abs(move));
 
+        anim.SetBool("Ground", grounded);
+        anim.SetFloat("vSpeed", GetComponent<Rigidbody2D>().velocity.y);
+
+        if (!grounded)
+            return;
+
         if (move > 0 && !isFacingRight)
 
             Flip();
         else if (move < 0 && isFacingRight)
             Flip();
+
 	}
     /// <summary>
     /// 
@@ -49,6 +58,8 @@ public class characterController : MonoBehaviour {
 		if (grounded && (Input.GetKeyDown (KeyCode.W)||Input.GetKeyDown (KeyCode.UpArrow))) {
 
 			GetComponent<Rigidbody2D>().AddForce (new Vector2(0f,jumpForce));
+            anim.SetBool("Ground", false);
+
 		}
 		GetComponent<Rigidbody2D>().velocity = new Vector2 (move * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
 		
