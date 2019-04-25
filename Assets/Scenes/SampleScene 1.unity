@@ -16527,11 +16527,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 456485864, guid: ff3441bfac2eb7648a4d904b826adf52, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.92
+      value: -0.141
       objectReference: {fileID: 0}
     - target: {fileID: 456485864, guid: ff3441bfac2eb7648a4d904b826adf52, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.94
+      value: -0.007
       objectReference: {fileID: 0}
     - target: {fileID: 456485864, guid: ff3441bfac2eb7648a4d904b826adf52, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16577,6 +16577,14 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1178972240, guid: ff3441bfac2eb7648a4d904b826adf52, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.060913235
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178972240, guid: ff3441bfac2eb7648a4d904b826adf52, type: 3}
+      propertyPath: m_Size.y
+      value: 0.19932705
+      objectReference: {fileID: 0}
     - target: {fileID: 1178972239, guid: ff3441bfac2eb7648a4d904b826adf52, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -16589,7 +16597,8 @@ PrefabInstance:
       propertyPath: whatIsGround.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1178972239, guid: ff3441bfac2eb7648a4d904b826adf52, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ff3441bfac2eb7648a4d904b826adf52, type: 3}
 --- !u!1 &1247687415 stripped
 GameObject:
@@ -16597,6 +16606,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1232637857}
   m_PrefabAsset: {fileID: 0}
+--- !u!70 &1247687416
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247687415}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0016994439, y: -0.045915037}
+  m_Size: {x: 0.05324083, y: 0.39861488}
+  m_Direction: 0
 --- !u!114 &1247687422
 MonoBehaviour:
   m_ObjectHideFlags: 0

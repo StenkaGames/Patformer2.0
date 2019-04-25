@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{4C670E35-1B35-DAAF-DACC-6B9141D1AB21}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Warped Caves/Screpts/Dead.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Warped Caves/Screpts/NewLevel.cs">
     <Files>
-      <File FileName="Assets/Warped Caves/Screpts/characterController.cs" Line="61" Column="43" />
-      <File FileName="Assets/Warped Caves/Screpts/Dead.cs" Line="25" Column="10" />
+      <File FileName="Assets/Warped Caves/Screpts/characterController.cs" Line="51" Column="20" />
+      <File FileName="Assets/Warped Caves/Screpts/Dead.cs" Line="1" Column="1" />
+      <File FileName="Assets/Warped Caves/Screpts/newcam.cs" Line="1" Column="1" />
+      <File FileName="Assets/Warped Caves/Screpts/NewLevel.cs" Line="17" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
